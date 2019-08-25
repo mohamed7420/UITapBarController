@@ -16,5 +16,11 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func btn_Action(_ sender: UIButton) {
+        
+        let TabBar = storyboard?.instantiateViewController(withIdentifier: "tabBar") as! TabBarVC
+        
+        present(TabBar, animated: true, completion: nil)
+    }
 }
 
